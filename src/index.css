@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #F1F6F9;
+}
+
+.nav-bar {
+    background-color: #9BA4B5;
+}
