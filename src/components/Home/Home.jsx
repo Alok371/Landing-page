@@ -5,9 +5,9 @@ import About from '../About/About';
 
 const Home = () => {
     return (
-        <div className="bg-gray-100 min-h-screen">
+        <div id='home' className="bg-gray-100 min-h-screen">
             {/* Hero Section */}
-            <section className="bg-gradient-to-r from-teal-900 to-teal-600 text-white py-24 px-8 relative overflow-hidden">
+            <section className="bg-gradient-to-r from-teal-900/80 to-teal-600/80 text-white py-32 px-8 relative overflow-hidden">
                 {/* Gradient Background */}
                 <div className="absolute inset-0 z-0">
                     <svg
@@ -17,7 +17,7 @@ const Home = () => {
                     >
                         <path
                             fill="#fff"
-                            fillOpacity="0.1"
+                            fillOpacity="0.05" // Adjust opacity here
                             d="M0 200l200-150 600 400-200 150z"
                         />
                     </svg>
@@ -38,7 +38,7 @@ const Home = () => {
                         transition={{ duration: 1, delay: 0.5 }}
                         className="text-lg mb-12 relative z-10"
                     >
-                        We deliver innovative solutions to drive your business forward.
+                        We deliver innovative solutions to drive your business forward. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis aliquam augue, at fermentum metus gravida vel. Vivamus lobortis luctus diam, sit amet lacinia magna dictum eget.
                     </motion.p>
                     <motion.div
                         initial={{ opacity: 0, scale: 0.5 }}
@@ -57,7 +57,7 @@ const Home = () => {
             </section>
 
             {/* About Section */}
-            <section className="py-24 px-8">
+            <section className="py-48 px-8"> {/* Adjusted py-48 for increased height */}
                 <About />
             </section>
         </div>

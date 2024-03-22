@@ -21,10 +21,10 @@ function Particle() {
         () => ({
             background: {
                 color: {
-                    value: "#E4E4E4",
+                    value: "#212121",
                 },
             },
-            fpsLimit: 120,
+            fpsLimit: 30,
             interactivity: {
                 events: {
                     onClick: {
@@ -64,7 +64,7 @@ function Particle() {
                         default: "bounce",
                     },
                     random: false,
-                    speed: 6,
+                    speed: 4,
                     straight: false,
                 },
                 number: {
@@ -81,6 +81,10 @@ function Particle() {
                 },
                 size: {
                     value: { min: 1, max: 5 },
+                },
+                fullScreen: {
+                    enable: true,
+                    zIndex: 0
                 },
             },
             detectRetina: true,

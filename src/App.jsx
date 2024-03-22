@@ -8,6 +8,12 @@ import ContactUs from './components/ContactUs/ContactUs'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Layout from './Layout'
 import About from './components/About/About'
+import Particle from './components/Particles/Particle'
+import Navbar from './components/Navbar/Navbar'
+import { motion } from 'framer-motion';
+import Footer from './components/Footer/Footer'
+
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,16 +26,13 @@ const router = createBrowserRouter(
       <Route path='resources' element={<Resources />} />
       <Route path='careers' element={<Careers />} />
       <Route path='contactus' element={<ContactUs />} />
-
     </Route >
   )
 )
 
 function App() {
   return (
-    <>
-      <RouterProvider router={router} />
-    </>
+    <RouterProvider router={router} />
   )
 }
 
