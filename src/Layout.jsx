@@ -7,6 +7,7 @@ import Particle from './components/Particles/Particle';
 const Layout = () => {
     return (
         <>
+
             <Navbar />
             {/* <Particle /> */}
             <Outlet />

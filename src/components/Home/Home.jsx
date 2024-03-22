@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import About from '../About/About';
+import Resources from '../Resources/Resources';
 
 const Home = () => {
     return (
@@ -59,6 +60,9 @@ const Home = () => {
             {/* About Section */}
             <section className="py-48 px-8"> {/* Adjusted py-48 for increased height */}
                 <About />
+            </section>
+            <section className="py-40 px-8"> {/* Adjusted py-48 for increased height */}
+                <Resources />
             </section>
         </div>
     );

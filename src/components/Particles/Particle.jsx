@@ -84,7 +84,7 @@ function Particle() {
                 },
                 fullScreen: {
                     enable: true,
-                    zIndex: 0
+                    zIndex: 0,
                 },
             },
             detectRetina: true,
