@@ -8,10 +8,11 @@ const Layout = () => {
     return (
         <>
 
-            <Navbar />
             {/* <Particle /> */}
-            <Outlet />
-            <Footer />
+            <Navbar style={{ zIndex: 10 }} />
+            <Outlet style={{ zIndex: 12 }} />
+            <Footer style={{ zIndex: 10 }} />
+
         </>
     );
 }

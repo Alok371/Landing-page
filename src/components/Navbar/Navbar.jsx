@@ -17,7 +17,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-teal-950 text-white p-4 shadow-2xl shadow-white">
+        <nav className="bg-teal-950 text-white p-4 relative z-10">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between md:items-center">
                 <div className="flex items-center mb-4 md:mb-0">
                     <img src="path_to_your_logo" alt="Logo" className="h-8 w-auto" />

@@ -45,8 +45,8 @@ const About = () => {
     }, [controlsWhoWeServe, inViewWhoWeServe]);
 
     return (
-        <div id='about' className="max-w-7xl mx-auto px-4 py-8">
-            <h2 className="text-4xl font-bold mb-12 text-center">About Us</h2>
+        <div id='about' className="max-w-7xl mx-auto px-4 py-8 relative z-10">
+            <h2 className="text-5xl font-bold mb-12 text-center">About Us</h2>
             <div className="flex flex-col md:flex-col gap-8">
                 <motion.div
                     id='whoweare'

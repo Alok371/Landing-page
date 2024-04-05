@@ -42,15 +42,21 @@ const Resources = () => {
 
     return (
         <div className="min-h-screen text-teal-900">
-            <div className="max-w-7xl mx-auto px-4 py-8">
-                <h1 className="text-4xl font-bold mb-12 text-center">Company Resources</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+            <div className="max-w-7xl mx-auto px-4 py-0">
+                <h1 className="text-4xl font-bold mb-12 text-center relative z-10">Company Resources</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10 ">
                     {resources.map((resource, index) => (
-                        <div key={index} className="bg-white rounded-lg shadow-xl shadow-teal-500 p-6">
-                            <h2 className="text-xl font-semibold mb-2">{resource.title}</h2>
-                            <p className="text-black mb-4">{resource.description}</p>
-                            <span className="inline-block bg-black text-white px-3 py-1 rounded-full text-xs font-semibold mb-2">{resource.type}</span>
-                            <a href={resource.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 px-3 hover:underline">View Resource</a>
+                        <div key={index} className="bg-white rounded-2xl shadow-sm shadow-teal-500 size-96">
+                            <div className='bg-teal-300 p-6 rounded-lg'>
+                                <h2 className="text-center text-xl font-semibold mb-2">{resource.title}</h2>
+                            </div>
+                            <div className='p-10 pt-10 m-auto'>
+                                <p className="text-black mb-4">{resource.description}</p>
+                                <span className="inline-block bg-black text-white font-bold px-5 py-3 rounded-full text-xs  mb-2">{resource.type}</span>
+                                <a href={resource.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 font-bold px-3 hover:underline">View Resource</a>
+                            </div>
+
+
                         </div>
                     ))}
                 </div>

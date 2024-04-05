@@ -54,7 +54,7 @@ const WhoWeServe = () => {
                     How We Help
                 </motion.h2>
                 <motion.p
-                    className="text-lg mb-8 text-white"
+                    className="text-lg text-white"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1.7, duration: 0.5 }}

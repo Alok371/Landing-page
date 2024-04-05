@@ -21,7 +21,7 @@ function Particle() {
         () => ({
             background: {
                 color: {
-                    value: "#212121",
+                    value: "#EEEEEE",
                 },
             },
             fpsLimit: 30,
@@ -83,8 +83,8 @@ function Particle() {
                     value: { min: 1, max: 5 },
                 },
                 fullScreen: {
-                    enable: true,
-                    zIndex: 0,
+                    enable: false,
+                    zIndex: -1,
                 },
             },
             detectRetina: true,
@@ -102,7 +102,9 @@ function Particle() {
         );
     }
 
-    return <></>;
+    return <>
+
+    </>;
 }
 
 export default Particle
