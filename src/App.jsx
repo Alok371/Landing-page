@@ -14,7 +14,7 @@ import Particle from './components/Particles/Particle';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
-      <Route path='/Home' element={<Home />} />
+      <Route path='/home' element={<Home />} />
       <Route path='/about' element={<About />}>
         <Route path='whatwedo' element={<WhatWeDo />} />
         <Route path='whoweare' element={<WhoWeAre />} />
@@ -30,7 +30,7 @@ const router = createBrowserRouter(
 function App() {
   return (
     <>
-      <Particle />
+      {/* <Particle /> */}
       <RouterProvider router={router} />
     </>
 
